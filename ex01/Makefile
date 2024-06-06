@@ -1,4 +1,4 @@
-NAME = ScalarConversion
+NAME = iter
 
 SRC = main.cpp
 

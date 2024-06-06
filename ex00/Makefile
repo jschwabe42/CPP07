@@ -1,4 +1,4 @@
-NAME = ScalarConversion
+NAME = whatever
 
 SRC = main.cpp
 
