@@ -1,6 +1,6 @@
 NAME = Array
 
-SRC = main.cpp Array.cpp
+SRC = main.cpp
 
 OBJ = $(SRC:.cpp=.o)
 
