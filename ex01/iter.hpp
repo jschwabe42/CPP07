@@ -3,10 +3,6 @@
 #include <cstdlib>
 #include <iostream>
 
-template <typename T> void print(const T& value) {
-	std::cout << value << std::endl;
-}
-
 /**
  * @brief function template iter that takes 3 parameters and returns nothing
  * 
@@ -15,8 +11,8 @@ template <typename T> void print(const T& value) {
  * @param length of the array
  * @param func to call on each element
  */
-template <typename T>
-void iter(T* addr, std::size_t length, void (*func)(const T&)) {
+template <typename T, typename F>
+void iter(T* addr, std::size_t length, F func) {
 	for (std::size_t i = 0; i < length; i++) {
 		func(addr[i]);
 	}
